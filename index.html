@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salad Hut</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="dark-theme">
+        <div class="container">
+            <div class="logo">
+                <img src="img/salad-hut-logo.png.png" alt="Salad Hut Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li> <!-- Corrected link -->
+                    <li><a href="order.html">Order Online</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero dark-theme">
+        <div class="container">
+            <h1>Welcome to Salad Hut</h1>
+            <p>Discover our fresh and delicious salads made with locally sourced ingredients.</p>
+            <a href="menu.html" class="cta-button">Explore Menu</a>
+        </div>
+    </section>
+
+    <!-- Reservation section -->
+    <section class="reservation">
+        <div class="container">
+            <h2>Make a Reservation</h2>
+            <form action="reservation.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Salad Hut. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+

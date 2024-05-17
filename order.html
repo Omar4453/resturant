@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Online - Salad Hut</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="dark-theme">
+        <div class="container">
+            <div class="logo">
+                <img src="img/salad-hut-logo.png.png" alt="Salad Hut Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#order" class="active">Order Online</a></li> <!-- Active state for the order page -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="order">
+        <div class="container">
+            <h2>Order Online</h2>
+            <form class="order-form" action="place_order.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" required>
+                <label for="address">Delivery Address:</label>
+                <textarea id="address" name="address" required></textarea>
+                <h3>Select Salad:</h3>
+                <select id="salad" name="salad" required>
+                    <option value="" disabled selected>Select Salad</option>
+                    <option value="Garden Fresh Salad">Garden Fresh Salad</option>
+                    <option value="Mediterranean Quinoa Salad">Mediterranean Quinoa Salad</option>
+                    <!-- Add more salad options here -->
+                </select>
+                <h3>Additional Instructions:</h3>
+                <textarea id="instructions" name="instructions" placeholder="Optional"></textarea>
+                <button type="submit">Place Order</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Salad Hut. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
